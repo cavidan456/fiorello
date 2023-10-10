@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    background-color: #fff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-right: 40px;
+    justify-content:space-evenly;
+}
+
+.logoImg img{
+    width: 250px;
+    padding: 20px;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul {
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul>li{
+    padding: 0 30px;
+}
+
+nav>ul>li>ul {
+    padding: 20px 0;
+}
+
+/* HOME */
+
+#home{
+    position: relative;
+}
+
+#homeBottom{
+    position: absolute;
+    top: 30px;
+    width: 200px;
+    display: none;
+}
+
+#home:hover #homeBottom {
+    display: block;
+    
+}
+
+/* pages */
+
+#pages{
+    position: relative;
+}
+
+#pagesBottom {
+    position: absolute;
+    top: 30px;
+    display: none;
+    width: 120px;
+}
+
+#pages:hover #pagesBottom{
+    display: block;
+}
+
+/* PORTFOLIO */
+
+#port{
+    position: relative;
+}
+
+#portBottom{
+    position: absolute;
+    top: 30px;
+    display: none;
+    width: 150px;
+    height: 120px;
+}
+
+#port:hover #portBottom{
+    display: block;
+}
+
+#layouts{
+    position: relative;
+}
+
+#lytBottom{
+    position: absolute;
+    left:150px;
+    width: 180px;
+    gap: 0 40px;
+    display: none;
+}
+
+
+
+#layouts:hover  #lytBottom{
+    display: block;
+}
+
+#single{
+    position: relative;
+}
+
+#singleBottom {
+    position: absolute;
+    left:120px;
+    width: 120px;
+    gap: 0 40px;
+    display: none;
+}
+
+#single:hover #singleBottom {
+    display: block;
+}
+
+/* BOLG */
+
+#blog{
+    position: relative;
+}
+
+#blogBottom {
+    position: absolute;
+    top: 30px;
+    width: 120px;
+    display: none;
+    /* animation: drop 10s forwards; */
+}
+
+/* @keyframes drop {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 700px;
+    }
+} */
+
+#blog:hover #blogBottom {
+    display: block;
+}
+
+#postBottom {
+    position: absolute;
+    left:80px;
+    width: 80px;
+    gap: 0 40px;
+    display: none;
+}
+
+#post{
+    position: relative;
+}
+
+#post:hover #postBottom {
+    display: block;
+}
+
+/* elements */
+
+#elements{
+    position: relative;
+}
+
+#elementsBottom {
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+
+#elements:hover #elementsBottom{
+    display: block;
+}
+
+
+
+#classic:hover #classicBottom {
+    display: block; 
+}
+
+#infographic:hover #infographicBottom {
+    display: block;
+}
+
+
+#interactive:hover #interactiveBottom {
+    display: block;
+}
+
+#typography:hover #typographyBottom {
+    display: block;
+}
+
+#classic,#infographic,#interactive,#typography{
+    position: relative;
+    padding-right: 20px;
+}
+
+#classicBottom,
+#infographicBottom,
+#interactiveBottom,
+#typographyBottom{
+    position: absolute;
+    left:120px;
+    width: 150px;
+    gap: 0 40px;
+    display: none;
+    background: #000;
+}
+
+
+/*navbar after animation*/
+
+a{
+    position: relative;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 1s ease-in-out;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+
+/* SHOP TABLO */
+
+.shop-tablo {
+    display: none;
+}
+
+#shop{
+    position: relative;
+}
+.shop-tablo{
+    position: absolute;
+    top: 50px;
+}
+
+.shop-tablo>ul {
+    width: 250px;
+}
+
+ li{
+    padding: 10px 0;
+}
+
+.shopBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shop:hover .shop-tablo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
